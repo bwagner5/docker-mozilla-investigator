@@ -1,12 +1,18 @@
 mig:
-  build: .
+  build: MIG
   ports: 
-   - ""
+   - "51664:51664"
   links:
    - postgres
    - rabbitmq
+  hostname: api.mig.example.com
 postgres:
-  image: postgres
-rabbitmq
-  image: rabbitmq
+  build: postgres
+  expose:
+   - "5432"
+rabbitmq:
+  build: rabbitmq
+  expose:
+   - "5671"
+  hostname: mig.example.com
 

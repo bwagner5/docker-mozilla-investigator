@@ -11,4 +11,5 @@ COPY scheduler.crt /etc/mig/
 
 RUN cd /go/src/mig.ninja/mig && make mig-scheduler && make mig-api && make worker-agent-intel && make worker-compliance-item
 
+CMD ["/opt/mig/bin/mig-scheduler"]
 
