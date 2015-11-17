@@ -15,4 +15,9 @@ rabbitmq:
   expose:
    - "5671"
   hostname: mig.example.com
-
+resolvable:
+  image: mgood/resolvable
+  hostname: resolvable
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock 
+    - /etc/resolv.conf:/tmp/resolv.conf
