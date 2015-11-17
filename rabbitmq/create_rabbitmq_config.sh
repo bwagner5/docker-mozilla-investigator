@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
-adminpass=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32})
-schedpass=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32})
-agentpass=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32})
-workrpass=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32})
+adminpass=password
+schedpass=password
+agentpass=password
+workrpass=password
 
 echo "creating rabbitmq users"
 rabbitmqctl add_user admin $adminpass
