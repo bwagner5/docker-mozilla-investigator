@@ -1,0 +1,7 @@
+# Postgres Docker Container for MIG
+
+## This postgres container can be built and run with the following commands:
+
+`docker build -t mig/postgres .`
+
+`docker run -d mig/postgres`
