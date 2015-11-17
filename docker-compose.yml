@@ -1,0 +1,12 @@
+mig:
+  build: .
+  ports: 
+   - ""
+  links:
+   - postgres
+   - rabbitmq
+postgres:
+  image: postgres
+rabbitmq
+  image: rabbitmq
+
