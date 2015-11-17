@@ -1,0 +1,91 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4098 (0x1002)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=Florida, L=Gator Town, O=MIG, OU=CA
+        Validity
+            Not Before: Nov 17 16:03:11 2015 GMT
+            Not After : Nov 16 16:03:11 2018 GMT
+        Subject: C=US, ST=Florida, L=Gator Town, O=MIG, OU=worker, CN=worker.
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:cf:c1:7c:f8:60:a0:98:8b:71:e3:f1:f7:74:6a:
+                    75:01:1b:d8:99:d6:47:4e:71:82:69:e7:9d:a5:50:
+                    0e:2e:30:61:0e:59:a7:d8:78:c7:ad:5e:73:c2:0e:
+                    ed:02:81:4c:e1:90:9c:5d:1c:b6:24:5a:b1:bc:4c:
+                    35:cf:1f:30:47:77:b1:e8:40:20:61:be:8a:c2:0b:
+                    ed:a6:4e:8d:47:f5:94:eb:1c:01:f8:a7:63:09:41:
+                    7a:d3:e2:cd:29:70:d3:63:58:d5:8a:97:5f:61:c6:
+                    f1:ad:b3:54:e8:91:c7:5b:9b:75:c9:29:67:a2:7d:
+                    8a:86:f8:80:59:ba:8d:d3:9f:c4:6a:b3:f5:a6:67:
+                    17:b3:f7:a3:44:3f:8d:bd:7c:bd:9c:43:d7:92:57:
+                    bb:9c:0a:1a:c9:10:be:76:2d:e4:aa:5b:1e:8b:ec:
+                    49:e3:ce:11:82:3a:a0:13:b8:8e:e9:1d:47:2c:43:
+                    d0:fd:66:c7:78:99:17:75:13:a5:42:08:bc:6d:07:
+                    9e:b3:3b:02:75:70:db:3f:77:c0:bc:30:8a:7b:04:
+                    30:42:50:ca:aa:f3:a6:d6:6d:72:74:26:7d:86:a4:
+                    cf:62:d4:1f:5c:b5:8a:93:16:38:c3:b4:21:91:dd:
+                    c3:7a:77:05:e0:08:58:3c:72:eb:e2:d9:6e:56:70:
+                    8f:b7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:EE:32:4E:67:4D:3C:29:29:19:7B:E7:18:80:5F:51:68:98:2C:85:BB
+                DirName:/C=US/ST=Florida/L=Gator Town/O=MIG/OU=CA
+                serial:BA:1D:E5:47:93:25:44:DE
+
+            X509v3 Issuer Alternative Name: 
+                <EMPTY>
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication, Microsoft Server Gated Crypto, Netscape Server Gated Crypto
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment
+            Netscape Cert Type: 
+                SSL Client, SSL Server
+    Signature Algorithm: sha256WithRSAEncryption
+        88:fd:52:d7:72:0a:75:eb:36:3f:ad:9b:78:00:38:ba:84:e7:
+        7f:0f:77:82:f0:61:51:aa:41:95:a7:22:e1:07:33:b2:c2:51:
+        9c:e7:a0:16:df:89:20:c3:9e:b5:12:3a:e8:0e:76:9a:ac:7f:
+        b2:69:b6:bb:4f:d3:40:e0:34:8d:56:ea:ee:a6:15:24:04:47:
+        0d:f5:a4:68:fe:16:ff:b2:a0:a3:b5:d6:9a:30:9f:8d:fa:f0:
+        7b:df:fe:8d:ba:6b:c3:1f:58:9b:4a:0f:c6:ff:29:19:7b:ed:
+        56:a8:65:a7:90:ea:f0:0a:fc:8b:36:e7:6d:34:63:ad:d3:6f:
+        9f:61:0c:47:18:b2:27:88:bc:4e:81:8d:76:80:d9:49:c7:fc:
+        3b:15:84:30:71:66:79:c8:53:45:8c:52:29:c2:d0:9d:b4:2a:
+        f8:13:88:b6:c7:f8:70:9e:6a:42:45:cb:eb:d2:40:30:5f:90:
+        b0:4e:2b:06:45:2d:96:e3:fa:aa:1b:3f:42:de:2f:f0:0e:f0:
+        e5:29:9b:61:2d:b7:f4:14:c7:3d:89:15:97:db:d9:ec:c2:80:
+        3d:42:15:fb:8c:0b:98:71:95:d9:64:fd:6b:33:92:1a:7a:ce:
+        31:ce:2c:d6:ad:2e:34:36:41:02:4c:fd:0e:51:ad:d9:77:6b:
+        af:a5:c8:0d
+-----BEGIN CERTIFICATE-----
+MIIEJDCCAwygAwIBAgICEAIwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMx
+EDAOBgNVBAgMB0Zsb3JpZGExEzARBgNVBAcMCkdhdG9yIFRvd24xDDAKBgNVBAoM
+A01JRzELMAkGA1UECwwCQ0EwHhcNMTUxMTE3MTYwMzExWhcNMTgxMTE2MTYwMzEx
+WjBlMQswCQYDVQQGEwJVUzEQMA4GA1UECAwHRmxvcmlkYTETMBEGA1UEBwwKR2F0
+b3IgVG93bjEMMAoGA1UECgwDTUlHMQ8wDQYDVQQLDAZ3b3JrZXIxEDAOBgNVBAMM
+B3dvcmtlci4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPwXz4YKCY
+i3Hj8fd0anUBG9iZ1kdOcYJp552lUA4uMGEOWafYeMetXnPCDu0CgUzhkJxdHLYk
+WrG8TDXPHzBHd7HoQCBhvorCC+2mTo1H9ZTrHAH4p2MJQXrT4s0pcNNjWNWKl19h
+xvGts1Tokcdbm3XJKWeifYqG+IBZuo3Tn8Rqs/WmZxez96NEP429fL2cQ9eSV7uc
+ChrJEL52LeSqWx6L7EnjzhGCOqATuI7pHUcsQ9D9Zsd4mRd1E6VCCLxtB56zOwJ1
+cNs/d8C8MIp7BDBCUMqq86bWbXJ0Jn2GpM9i1B9ctYqTFjjDtCGR3cN6dwXgCFg8
+cuvi2W5WcI+3AgMBAAGjgfMwgfAwfwYDVR0jBHgwdoAU7jJOZ008KSkZe+cYgF9R
+aJgshbuhU6RRME8xCzAJBgNVBAYTAlVTMRAwDgYDVQQIDAdGbG9yaWRhMRMwEQYD
+VQQHDApHYXRvciBUb3duMQwwCgYDVQQKDANNSUcxCzAJBgNVBAsMAkNBggkAuh3l
+R5MlRN4wCQYDVR0SBAIwADA0BgNVHSUELTArBggrBgEFBQcDAQYIKwYBBQUHAwIG
+CisGAQQBgjcKAwMGCWCGSAGG+EIEATAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIF
+4DARBglghkgBhvhCAQEEBAMCBsAwDQYJKoZIhvcNAQELBQADggEBAIj9UtdyCnXr
+Nj+tm3gAOLqE538Pd4LwYVGqQZWnIuEHM7LCUZznoBbfiSDDnrUSOugOdpqsf7Jp
+trtP00DgNI1W6u6mFSQERw31pGj+Fv+yoKO11pown4368Hvf/o26a8MfWJtKD8b/
+KRl77VaoZaeQ6vAK/Is25200Y63Tb59hDEcYsieIvE6BjXaA2UnH/DsVhDBxZnnI
+U0WMUinC0J20KvgTiLbH+HCeakJFy+vSQDBfkLBOKwZFLZbj+qobP0LeL/AO8OUp
+m2Ett/QUxz2JFZfb2ezCgD1CFfuMC5hxldlk/Wszkhp6zjHOLNatLjQ2QQJM/Q5R
+rdl3a6+lyA0=
+-----END CERTIFICATE-----
