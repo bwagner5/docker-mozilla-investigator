@@ -52,7 +52,7 @@
         maxconn = 10
 
 [mq]
-        host  = "mig.example.com"
+        host  = "mig"
         port  = 5671
         user  = "scheduler"
         pass  = "password"

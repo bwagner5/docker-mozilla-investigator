@@ -9,8 +9,11 @@ COPY ca.crt /etc/mig/
 COPY scheduler.key /etc/mig/
 COPY scheduler.crt /etc/mig/
 
+COPY start.sh /
+
 RUN cd /go/src/mig.ninja/mig && make mig-scheduler && make mig-api && make worker-agent-intel && make worker-compliance-item
 
+#ENTRYPOINT ["/start.sh"]
 
 CMD ["src/mig.ninja/mig/bin/linux/amd64/mig-scheduler"]
 
