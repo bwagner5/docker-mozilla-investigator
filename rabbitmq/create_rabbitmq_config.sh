@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+service rabbitmq-server start
+
 adminpass=password
 schedpass=password
 agentpass=password
@@ -37,7 +39,7 @@ rabbitmqctl set_permissions -p mig worker \
 	'^(toworkers|migevent\..*)$'
 
 
-
+service rabbitmq-server stop
 
        
         

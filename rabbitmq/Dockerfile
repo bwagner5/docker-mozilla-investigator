@@ -7,6 +7,9 @@ COPY rabbitmq.crt /etc/rabbitmq/
 COPY rabbitmq.config /etc/rabbitmq/rabbitmq.config
 
 COPY create_rabbitmq_config.sh /
-RUN service rabbitmq-server start && sh /create_rabbitmq_config.sh && service rabbitmq-server stop
+COPY rabbitmq-entrypoint.sh /
+#RUN service rabbitmq-server start && sh /create_rabbitmq_config.sh && service rabbitmq-server stop
 
-#CMD ["rabbitmq-server", "start"]
+ENTRYPOINT ["/rabbitmq-entrypoint.sh"]
+
+CMD ["rabbitmq-server"]
