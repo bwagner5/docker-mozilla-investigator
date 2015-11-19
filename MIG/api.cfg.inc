@@ -9,13 +9,13 @@
 
 [server]
         # local listening ip
-        ip = "192.168.99.100"
+        ip = "0.0.0.0"
 
         # local listening port
         port = 51664
 
         # public location of the API endpoint
-        host = "https://api.mig.example.com"
+        host = "http://api.mig.example.com"
 
         # API base route, all endpoints are below this path
         # ex: http://localhost:12345/api/v1/action/create/
@@ -23,7 +23,7 @@
         baseroute = "/api/v1"
 
 [postgres]
-        host = "127.0.0.1"
+        host = "postgres"
         port = 5432
         dbname = "mig"
         user = "migapi"

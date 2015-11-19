@@ -14,5 +14,5 @@ docker run -d --name=rabbitmq --hostname=mig mig/rabbitmq
 cd ../MIG
 docker build -t mig/core .
 sleep 30
-docker run --name=core --hostname=api --link=postgres --link=rabbitmq mig/core
+docker run -d -p 80:51664 --name=core --hostname=api --link=postgres --link=rabbitmq mig/core
 

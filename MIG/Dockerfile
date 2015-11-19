@@ -13,7 +13,9 @@ COPY start.sh /
 
 RUN cd /go/src/mig.ninja/mig && make mig-scheduler && make mig-api && make worker-agent-intel && make worker-compliance-item
 
-#ENTRYPOINT ["/start.sh"]
+EXPOSE 51664
 
-CMD ["src/mig.ninja/mig/bin/linux/amd64/mig-scheduler"]
+ENTRYPOINT ["/start.sh"]
+
+#CMD ["src/mig.ninja/mig/bin/linux/amd64/mig-scheduler"]
 
