@@ -1,0 +1,16 @@
+GPG Key Password is `mig`
+
+GPG Generation:
+
+`gpg: key F594783B marked as ultimately trusted
+public and secret key created and signed.
+
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+pub   2048D/F594783B 2015-11-21
+      Key fingerprint = 44D5 3F96 2B29 C278 E82B  7769 C502 6C27 F594 783B
+uid                  Mozilla InvestiGator (Docker MIG) <mig@mig.com>
+
+Note that this key cannot be used for encryption.  You may want to use
+the command "--edit-key" to generate a subkey for this purpose.`
