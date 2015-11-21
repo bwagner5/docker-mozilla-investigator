@@ -14,5 +14,9 @@ docker run -d --name=rabbitmq --hostname=mig mig/rabbitmq
 cd ../MIG
 docker build -t mig/core .
 sleep 30
-docker run -d -p 80:51664 --name=core --hostname=api --link=postgres --link=rabbitmq mig/core
+docker run -d --name=core --privileged --hostname=api --link=postgres --link=rabbitmq mig/core
+
+cd ../nginx
+docker build -t mig/nginx .
+docker run -d -p 80:80 --name=mig --hostname=mig mig/nginx
 

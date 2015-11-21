@@ -1,6 +1,6 @@
 FROM golang
 
-RUN apt-get update && apt-get install -y libreadline-dev
+RUN apt-get update && apt-get install -y libreadline-dev #gnupg-agent pinentry-curses
 
 RUN go get mig.ninja/mig/client/mig-console
 
@@ -12,6 +12,6 @@ COPY gnupg /root/.gnupg/
 
 RUN gpg --import /root/.gnupg/pubring.gpg
 
-#RUN gpg --import /root/.gnupg/secring.gpg
+RUN gpg --export -a mig@mig.com > /root/mig_investigator_pubkey.asc 
 
-#RUN gpg --import /root/.gnupg/trustdb.gpg
+CMD ["bin/mig-console"]
