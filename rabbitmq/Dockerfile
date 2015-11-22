@@ -1,4 +1,4 @@
-FROM rabbitmq
+FROM rabbitmq:3.5.6-management
 
 COPY ca.crt /etc/rabbitmq/
 COPY rabbitmq.key /etc/rabbitmq/

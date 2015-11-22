@@ -9,7 +9,7 @@ docker run -d --name=postgres --hostname=postgres mig/postgres
 
 cd ../rabbitmq
 docker build -t mig/rabbitmq .
-docker run -d --name=rabbitmq --hostname=mig mig/rabbitmq
+docker run -d -p 8080:15672 --name=rabbitmq --hostname=mig mig/rabbitmq
 
 cd ../MIG
 docker build -t mig/core .
@@ -20,3 +20,6 @@ cd ../nginx
 docker build -t mig/nginx .
 docker run -d -p 80:80 --name=mig --hostname=mig mig/nginx
 
+cd ../client
+docker build -t mig/client .
+docker run -it --name=client --hostname=client mig/client

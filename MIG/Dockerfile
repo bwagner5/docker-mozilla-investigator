@@ -11,15 +11,10 @@ COPY scheduler.crt /etc/mig/
 
 COPY start.sh /
 
+COPY agents_whitelist.txt /var/cache/mig/agents_whitelist.txt
 
+RUN cd /go/src/mig.ninja/mig && make mig-scheduler && make mig-api
 
-RUN cd /go/src/mig.ninja/mig && make mig-scheduler && make mig-api && make worker-agent-intel && make worker-compliance-item
-
-RUN apt-get update && apt-get install -y rinetd
-
-COPY rinetd.conf /etc/rinetd.conf
-
-EXPOSE 80
 EXPOSE 51664
 
 ENTRYPOINT ["/start.sh"]

@@ -74,7 +74,7 @@
         level = "debug"
 
 ; for file logging
-;   file = "mig_scheduler.log"
+   file = "mig_scheduler.log"
 
 ; for syslog, logs go into local3
 ;    host = "localhost"
