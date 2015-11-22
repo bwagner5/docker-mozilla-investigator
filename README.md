@@ -12,7 +12,7 @@
  
  ------------------
  
- #### About:
+#### About:
  
  This repository contains multiple docker containers that load preconfigured software to run Mozilla's InvestiGator (MIG) distributed forensic and incident response system. The containers and a convenience script to bootstrap the full system on a single host helps to quickly evaluate the software or train on it. Without these containers, MIG is extremely time-consuming to setup and evaluate. Probably the easiest method of setup is using a cloud service which can be expensive for evaluation or training purposes. 
  
