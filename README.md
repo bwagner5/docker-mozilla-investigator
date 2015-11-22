@@ -31,7 +31,7 @@ The script `start_mig.sh` will for the most part bootstrap the full enviroment. 
 A MIG Agent is not bootstrapped right now because of an issue with starting the process with Docker (still investigating). The MIG Agent container is meant to be used as a base container (i.e. using docker's `FROM mig/agent`) to build a more complex image. I've also thought about just using the MIG Agent container to build the binaries for different platforms and then include those in other more complex images that extend other non-MIG dockerfiles.
 
 
-#### Evaluation Process:
+#### Getting Started:
 
 - Execute `start_mig.sh`
 - `cd client` and run `docker run -i mig/client`
