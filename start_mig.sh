@@ -20,6 +20,9 @@ cd ../nginx
 docker build -t mig/nginx .
 docker run -d -p 80:80 --name=mig --hostname=mig mig/nginx
 
+cd ../agent
+docker build -t mig/agent .
+
 cd ../client
 docker build -t mig/client .
 docker run -it --name=client --hostname=client mig/client
