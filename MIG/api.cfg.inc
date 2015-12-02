@@ -31,11 +31,11 @@
         sslmode = "disable"
 
 [logging]
-        mode = "stdout" ; stdout | file | syslog
+        mode = "file" ; stdout | file | syslog
         level = "debug"
 
 ; for file logging
-;   file = "mig_api.log"
+   file = "mig_api.log"
 
 ; for syslog, logs go into local3
 ;    host = "localhost"

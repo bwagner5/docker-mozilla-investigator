@@ -70,7 +70,7 @@
         timeout = "10m"
 
 [logging]
-        mode = "stdout" ; stdout | file | syslog
+        mode = "file" ; stdout | file | syslog
         level = "debug"
 
 ; for file logging
