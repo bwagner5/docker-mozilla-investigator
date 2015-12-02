@@ -164,8 +164,8 @@ GRANT UPDATE (status, lastmodified) ON investigators TO migapi;
 GRANT USAGE ON SEQUENCE investigators_id_seq TO migapi;
 
 -- readonly user is used for things like expanding targets
-CREATE ROLE migreadonly;
-ALTER ROLE migreadonly WITH NOSUPERUSER INHERIT NOCREATEROLE NOCREATEDB NOLOGIN;
+-- CREATE ROLE migreadonly;
+-- ALTER ROLE migreadonly WITH NOSUPERUSER INHERIT NOCREATEROLE NOCREATEDB NOLOGIN;
 GRANT SELECT ON actions, agents, agtmodreq, commands, invagtmodperm, modules, signatures TO migreadonly;
 GRANT SELECT (id, name, pgpfingerprint, publickey, status, createdat, lastmodified) ON investigators TO migreadonly;
 GRANT migreadonly TO migapi;
