@@ -36,14 +36,24 @@ I plan on creating another container to build the MIG Agent binaries for differe
 #### Getting Started:
 
 - Execute `start_mig.sh`
-- `cd client` and run `docker run -i mig/client`
-  - Enter password `mig`
-  - Type `create investigator`
-  - Give the investigator any name (e.g. Mig Investigator)
-  - Give the investigator a public key (or use the one provided in the container at path `/root/mig_investigator_pubkey.asc`) 
-  - Confirm with `y`
+  - Create First Investigator
+    - Enter password `mig`
+    - Type `create investigator`
+    - Give the investigator any name (e.g. Mig Investigator)
+    - Give the investigator a public key (or use the one provided in the container at path `/root/mig_investigator_pubkey.asc`) 
+    - Confirm with `y`
+  - Get Public Key of Scheduler Investigator
+    - Type `investigator 1`
+    - Type `pubkey`
+    - Copy the whole key (including header and footers) and paste into the GO array under `$REPOHOME/agent/mig-agent-conf.go` in index 1 (not 0).
+  - If you used the given key for your custom investigator, you do not need to copy it into the agent conf. If you did not, then follow the previous steps for your investigator.
+  - `exit` out of the client container
+  - Restart MIG Core with Auth ON
+    - execute the `restart_api_with_auth_on.sh`
+  - Start agents (you can execute as many times as you want for multiple agents)
+    - execute the `start_agent.sh` 
 
-** You can start more agents by cd'ing to the agent dir and executing `docker run -d mig/agent`
+
 
 
 

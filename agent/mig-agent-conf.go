@@ -93,8 +93,7 @@ var AGENTACL = [...]string{
 // this is an array of strings, put each public key block
 // into its own array entry, as shown below
 var PUBLICPGPKEYS = [...]string{
-`
------BEGIN PGP PUBLIC KEY BLOCK-----
+`-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xsJuBFZPyVURCADwnZRF0+oLpCVN8+XiRYJtDSYIa3EQNWT4uU/gJ4844hbcvdiF
 NNRz6KGfFMMEaSQpcb00k7JDTGn7QBsAEJ3+QEt41PBvRmJLpiFaAqgBiu0eLzSx
@@ -120,15 +119,34 @@ e8Q1Uq3j6Q6fNqVQpsZBP+KuF8ko/0yiw41gAcXV
 =/1QA
 -----END PGP PUBLIC KEY BLOCK-----
 `,
-`
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG v1; Name: Test User (This is a test user for Mozilla Investigator) <testuser+mig@example.net>
+`-----BEGIN PGP PUBLIC KEY BLOCK-----
 
-mI0EUvJcngEEAKH4MbzljzAha4MzUy4wnNHqNX65hlsWD3wPMAPL4R0F8h9VuyLw
-.........
-vld2mOto/1HZ7I3re0ItO/M+kpn1VgcsWFTmunohlmAZUKh9LK6gGZ4nXEqe3Lbx
-QnD9SDA9/d80
-=phhK
+xsBNBFZfTFEBCACn4qC6agqjo1rVvidvpmOnqKEfXK6F/ypXEqgeL/XtP4jBXn0K
+Gpv/82rb/8Zd6DHHJhPfwSvkMl8CNKeyhnd2PjZIphyAohYKLTE920ihmbEaLuDP
+SjdJ6KiMevazORrLr1m3wY267kebUR+90Pcm6mwSfESB1CEXUuL9EhpXWZ/XO/x3
+GBhkBH61LMg2AytRkevO8RZ+Ib5mRjAPINR72j3TqdtdNzaYTDBQqEqWOI8f1F59
+Ev05CvQ7ps9vpNCVEJkMOxgkHsuho34O+ksV4BqsnhPvP569IAYQG3xTbuB68r8b
+Tq1qakrXdX6o8sF+FNrhM8FJfSeLJv1CztcpABEBAAHNP21pZ3NjaGVkdWxlciAo
+TUlHIFNjaGVkdWxlciBhY3Rpb24gc2lnbmluZyBrZXkpIDxzY2hlZHVsZXJAbWln
+PsLAYgQTAQgAFgUCVl9MUQkQs04bO1ONascCGwMCGQEAAH3TCABVsl2J7Xzb7168
+O0nMIHt2RmJFCBim8R1tCcyjwcM98IzdY0TeXB2wVkRwrmgPcvz2ntu+dyFitZql
+mBAq3H3kwT4jhreCnAOfoyeutUPwXtvygqjujDXryFEgAsImVi07c+xrAFXULvuf
+CV596ghh2I55tnsV++8vl+wKGGJRYWw5vmXCbd4MTXfkOX68JTQkDT8n4gGPWHCL
+KwYvTokl3z/OQHQ/tjcm/pINgcJEi8aC8uf6ZYxLVFFdXHPe1bw6SSphhORw2LKr
+4t2CtTK2rkQCebS98uSCdzp8xKbhmO0QzH+vzENJ1ps5CvG2qPLfRHHR1GF8KYRu
+nT/yHle/zsBNBFZfTFEBCADr4j4TRo6A5bentK8ru3kgZ79Qxh6pfKFQ/zdE9jmH
+HdC9nBp2MRlVCQhoF5uBhtae+qmjiEYdlhJejOSzuk7HdIzlRZ4KnorzN8fMwGDn
+buWMnW7saTNtLm2MNnhJGgnRzk6U4n8I8a0c376OQdfHqjfsDdvuNav4yAhDk40g
+LbY8tQEKKyOWE1oeQW0tedtBACSs5PFS7ajEeuBA+Q9wzqqs0g+CvZDxM9o1EmZa
+RtCb4wwq/AO4okF1dHhWrBVXZslr0LbnBWAnHB0wv05Uf+74V/T6FZ8lVnqeoRED
+sVjrqivoK4fPbLh8hx2gIPNIbeRjgJ4fodp9bpzTcCaxABEBAAHCwF8EGAEIABMF
+AlZfTFEJELNOGztTjWrHAhsMAADkDwgAmp5214O9U7aKXGO/uJVzfZKyUf5upG3Z
+CHlktgnavb6Ul/5BT6Px7M8U6dvpeoMNQ7qxxg5yuLHgbhwk6vEvp7sTkKe0b1sG
+bXqSq/ChebLtBuYLu7a7xbYyswILUQplpe2Qu6c0/U/g8FL/0+mJ1JI5vW65q/BE
+2HxSg97shNphWHpJCK8SJM7bwMfbnH11RPEYjlOlIRvtgqfaX+X+wp04/VeehlaP
+nltWvEL3+th8MlXR3YWcppSnmK2v9cuaZznIjjgFeK5WXcyP9/I2yXx69bVI+bgw
+yQFvRVU62xX66HCin0Xd+o6hfsA/uRYaaE6nxWwyo5eKqi1U6wyaog==
+=sTPM
 -----END PGP PUBLIC KEY BLOCK-----
 `}
 

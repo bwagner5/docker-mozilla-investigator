@@ -20,10 +20,11 @@ cd ../nginx
 docker build -t mig/nginx .
 docker run -d -p 80:80 --name=mig --link=core --hostname=mig mig/nginx
 
+#Agent needs to be configured with scheduler's key
+#cd ../agent
+#docker build -t mig/agent .
+#docker run -d mig/agent
+
 cd ../client
 docker build -t mig/client .
-#docker run -it --name=client --hostname=client mig/client
-
-cd ../agent
-docker build -t mig/agent .
-docker run -d mig/agent
+docker run -it --name=client --hostname=client mig/client
