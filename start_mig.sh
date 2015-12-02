@@ -5,7 +5,7 @@ docker rm $(docker ps -a -q)
 
 cd postgres
 docker build -t mig/postgres .
-docker run -d --name=postgres --hostname=postgres mig/postgres
+docker run -d -p 5432:5432 --name=postgres --hostname=postgres mig/postgres
 
 cd ../rabbitmq
 docker build -t mig/rabbitmq .
@@ -18,11 +18,12 @@ docker run -d --name=core --privileged --hostname=api --link=postgres --link=rab
 
 cd ../nginx
 docker build -t mig/nginx .
-docker run -d -p 80:80 --name=mig --hostname=mig mig/nginx
-
-cd ../agent
-docker build -t mig/agent .
+docker run -d -p 80:80 --name=mig --link=core --hostname=mig mig/nginx
 
 cd ../client
 docker build -t mig/client .
-docker run -it --name=client --hostname=client mig/client
+#docker run -it --name=client --hostname=client mig/client
+
+cd ../agent
+docker build -t mig/agent .
+docker run -d mig/agent
