@@ -1,4 +1,6 @@
 #! /bin/bash 
 
-psql -U migadmin -d mig -f schema.sql
+su postgres
+
+psql -U postgres -d mig -f schema.sql
 
