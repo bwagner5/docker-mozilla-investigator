@@ -11,8 +11,7 @@ COPY migrc /root/.migrc
 
 COPY gnupg /root/.gnupg/
 
-COPY shellshock_action.maf /actions/shellshock_action.maf
-COPY simple.maf /actions/simple.maf
+COPY actions/ /actions/
 
 RUN gpg --import /root/.gnupg/pubring.gpg
 
